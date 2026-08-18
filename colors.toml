@@ -1,0 +1,50 @@
+# One Dark Pro — paleta semântica lida pelo Omarchy 4.
+#
+# Sem este arquivo o Omarchy deriva a paleta do alacritty.toml, e a derivação
+# perde cor: `orange` vira uma cópia do amarelo, `lighter_background` fica
+# igual ao `background` e `brown` é sintetizado. Estes valores alimentam o
+# shell.toml (barra, notificações), hyprland.lua, foot, kitty, ghostty, helix,
+# vscode, obsidian e claude — todos gerados por template a cada troca de tema.
+
+mode = "dark"
+
+accent = "#61afef"
+selection = "#3e4451"
+muted = "#5c6370"
+
+background = "#1e2229"
+dark_background = "#181b21"
+darker_background = "#131519"
+lighter_background = "#282c34"
+
+foreground = "#abb2bf"
+dark_foreground = "#5c6370"
+light_foreground = "#bcc3cd"
+bright_foreground = "#c8ccd4"
+
+red = "#e06c75"
+yellow = "#e5c07b"
+orange = "#d19a66"
+green = "#98c379"
+cyan = "#56b6c2"
+blue = "#61afef"
+magenta = "#c678dd"
+brown = "#be5046"
+
+# One Dark Pro não define variantes mais claras: o bright ANSI repete o normal,
+# igual ao que o alacritty.toml deste tema já fazia. Declarados explicitamente
+# para o Omarchy não inventar um clareamento de 20%.
+bright_red = "#e06c75"
+bright_yellow = "#e5c07b"
+bright_green = "#98c379"
+bright_cyan = "#56b6c2"
+bright_blue = "#61afef"
+bright_magenta = "#c678dd"
+
+selection_background = "#3e4451"
+selection_foreground = "#abb2bf"
+
+# Gradiente da borda ativa. O Omarchy converte para a forma de tabela que a API
+# Lua do Hyprland exige e reusa o valor no active-border da barra (shell.toml).
+hyprland_active_border = "rgba(61afefff) rgba(56b6c2ff) rgba(c678ddff) rgba(e5c07bff) 90deg"
+hyprland_inactive_border = "rgba(595959aa)"
